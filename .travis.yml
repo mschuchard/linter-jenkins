@@ -1,0 +1,35 @@
+# setup environment
+dist: trusty
+sudo: true
+language: java
+
+notifications:
+  email: false
+
+git:
+  depth: 5
+
+# setup tests
+env:
+  global:
+    - APM_TEST_PACKAGES="language-groovy"
+    - ATOM_LINT_WITH_BUNDLED_NODE="true"
+
+matrix:
+  include:
+  - os: linux
+    jdk: openjdk8
+  - os: linux
+    jdk: openjdk8
+    env: ATOM_CHANNEL=beta
+
+# execute tests
+install:
+  - sudo wget https://pkg.jenkins.io/debian-stable/binary/jenkins_2.73.2_all.deb
+  - sudo dpkg -i jenkins_2.73.2_all.deb
+  - "sudo sed -ir 's/^JENKINS_JAVA_OPTIONS=.*/JENKINS_JAVA_OPTIONS="-Djava.awt.headless=true -Djenkins.install.runSetupWizard=false"/' /etc/sysconfig/jenkins"
+  - sudo service jenkins start; sleep 10
+  - "sudo curl -L http://updates.jenkins-ci.org/update-center.json | sed '1d;$d' | curl -X POST -H 'Accept: application/json' -d @- http://localhost:8080/updateCenter/byId/default/postBack"
+  - sudo java -jar /var/cache/jenkins/war/WEB-INF/jenkins-cli.jar -s http://127.0.0.1:8080 install-plugin workflow-aggregator
+  - sudo systemctl restart jenkins; sleep 10
+script: 'curl -s https://raw.githubusercontent.com/atom/ci/master/build-package.sh | sh'

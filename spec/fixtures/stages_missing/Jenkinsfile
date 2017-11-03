@@ -1,0 +1,5 @@
+// stages missing
+// jenkins just outputs "pipeline {" info since this has no real line:col info
+pipeline {
+  agent any
+}

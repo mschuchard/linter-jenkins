@@ -1,0 +1,11 @@
+// clean
+pipeline {
+  agent any
+  stages {
+    stage('Info') {
+      steps {
+        print 'Hello World'
+      }
+    }
+  }
+}

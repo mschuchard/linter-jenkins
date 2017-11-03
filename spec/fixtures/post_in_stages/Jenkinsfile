@@ -1,0 +1,16 @@
+// post section inside stages
+// pure jenkins error not involving syntax
+pipeline {
+  agent any
+  stages {
+    stage('Info') {
+      steps {
+        print 'Hello World'
+      }
+    }
+    post {
+      always { print 'Finished!' }
+      unstable { print 'Uh oh.' }
+    }
+  }
+}

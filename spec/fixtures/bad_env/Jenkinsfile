@@ -1,0 +1,15 @@
+// bad environment
+// environment section syntax error; also triggers multiple issues so helpful for future feature
+pipeline {
+  agent any
+  environment {
+    bar 'baz'
+  }
+  stages {
+    stage('Info') {
+      steps {
+        print 'Hello World'
+      }
+    }
+  }
+}
