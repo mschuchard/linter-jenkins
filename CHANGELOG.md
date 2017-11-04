@@ -7,7 +7,6 @@
 - cli and curl
 - cli and ssh
 - curl
-- ssh then cli
 
 ### 1.0.0
 - Initial version ready for wide usage.
