@@ -4,7 +4,6 @@
 - capture more than first error
 - use native packages for curl and ssh
 - cli ssh -noKeyAuth option?
-- combine exec and args code across methods for one return
 - -auth can use file
 
 ### 1.0.0
