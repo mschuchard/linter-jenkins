@@ -9,7 +9,7 @@
 A Jenkins server with the `jenkins-pipeline` plugin installed is required to be accessible. If one is not available in your network, then it is recommended to stand up a portable server instance with Vagrant or Docker as both will work fine with this. The `Linter` and `Language-Jenkinsfile` or `Language-Groovy` Atom packages are also required. Additional requirements depend upon your usage method (see below).
 
 ### Usage
-- Currently only the first error will be displayed due to output format issues with `declarative-linter`.
+- See below methods.
 
 #### Usage Methods
 - **CLI and CURL**: Requires the `jenkins-cli` installed locally. Lints with `jenkins-cli` requesting the Jenkins server to CURL against its own endpoint.
