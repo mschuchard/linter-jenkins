@@ -19,4 +19,4 @@ See below methods.
 - **CURL**: Requires CURL installed locally and with access to the Jenkins server. Lints with `curl` against the server's REST API endpoint. This is the easiest, but Jenkins discourages it for security reasons (CRSF helps with this and is handled automatically).
 
 ### Note
-Both CLI methods and the CURL method are experimental. Users are encouraged to file an issue with information if they believe there is an issue with the code implementing them.
+Both CLI methods are experimental. Users are encouraged to file an issue with information if they believe there is an issue with the code implementing them.
