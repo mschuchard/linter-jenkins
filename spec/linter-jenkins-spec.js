@@ -10,7 +10,7 @@ describe('The Jenkins provider for Linter', () => {
     waitsForPromise(() => {
       atom.packages.activatePackage('linter-jenkins');
       atom.config.set('linter-jenkins.sshFullCli.port', '2222');
-      atom.config.set('linter-jenkins.sshFullCli.key', '/home/matt/git_repos/snippets-and-notes/jenkins/.vagrant/machines/default/virtualbox/private_key');
+      atom.config.set('linter-jenkins.sshFullCli.key', '/home/matt/git_repos/vagrant-boxes-docker-images/jenkins-vagrant/.vagrant/machines/default/virtualbox/private_key');
       atom.config.set('linter-jenkins.sshFullCli.userHost', 'vagrant@127.0.0.1');
       atom.config.set('linter-jenkins.sshFullCli.httpURI', 'http://192.168.33.10:8080');
       return atom.packages.activatePackage('language-groovy').then(() =>
