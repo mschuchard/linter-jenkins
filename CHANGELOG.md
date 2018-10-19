@@ -1,3 +1,6 @@
+### 1.0.4
+- Updated `atom-linter` dependency.
+
 ### 1.0.3
 - `Use Crumb` option for CURL method now functioning correctly.
 - Fix issue where total lint output was parsed instead of each line.
@@ -18,3 +21,4 @@
 ### Roadmap
 - https://www.npmjs.com/search?q=keywords:curl, https://www.npmjs.com/search?q=keywords:ssh
 - Warning: Permanently added '[127.0.0.1]:2222' (ECDSA) to the list of known hosts is caught as exception instead of being ignored; disabling throwonstderr seems to fix this but causes other problems
+- figure out travis
