@@ -1,4 +1,4 @@
-### 1.0.4
+### Next
 - Updated `atom-linter` dependency.
 
 ### 1.0.3
