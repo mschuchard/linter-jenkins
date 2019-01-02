@@ -1,5 +1,5 @@
 # setup environment
-dist: trusty
+dist: xenial
 sudo: true
 language: java
 
@@ -25,8 +25,8 @@ matrix:
 
 # execute tests
 install:
-  - sudo wget https://pkg.jenkins.io/debian-stable/binary/jenkins_2.121.3_all.deb
-  - sudo dpkg -i jenkins_2.121.3_all.deb
+  - sudo wget https://pkg.jenkins.io/debian-stable/binary/jenkins_2.150.1_all.deb
+  - sudo dpkg -i jenkins_2.150.1_all.deb
   - "sudo sed -ir 's/^JENKINS_JAVA_OPTIONS=.*/JENKINS_JAVA_OPTIONS="-Djava.awt.headless=true -Djenkins.install.runSetupWizard=false"/' /etc/sysconfig/jenkins"
   - sudo service jenkins start; sleep 10
   - "sudo curl -L http://updates.jenkins-ci.org/update-center.json | sed '1d;$d' | curl -X POST -H 'Accept: application/json' -d @- http://localhost:8080/updateCenter/byId/default/postBack"

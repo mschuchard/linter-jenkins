@@ -1,5 +1,6 @@
 ### Next
 - Updated `atom-linter` dependency.
+- Provide workaround for SSH outputting info/warn to stderr.
 
 ### 1.0.3
 - `Use Crumb` option for CURL method now functioning correctly.
