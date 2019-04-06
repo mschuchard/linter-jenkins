@@ -1,6 +1,7 @@
 ### Next
 - Updated `atom-linter` dependency.
 - Provide workaround for SSH outputting info/warn to stderr.
+- CURL option now follows redirects on endpoints.
 
 - https://www.npmjs.com/search?q=keywords:curl, https://www.npmjs.com/search?q=keywords:ssh
 - figure out travis
