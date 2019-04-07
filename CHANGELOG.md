@@ -1,12 +1,7 @@
-### Next
+### 1.0.4
 - Updated `atom-linter` dependency.
 - Provide workaround for SSH outputting info/warn to stderr.
 - CURL option now follows redirects on endpoints.
-
-- https://www.npmjs.com/search?q=keywords:curl, https://www.npmjs.com/search?q=keywords:ssh
-- figure out travis
-content will be enormous on curl debug output
-could re-enable no strict host key checking with no throwonstderr?
 
 ### 1.0.3
 - `Use Crumb` option for CURL method now functioning correctly.
