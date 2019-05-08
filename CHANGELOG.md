@@ -2,7 +2,6 @@
 - Add option to disable strict host key checking on SSH methods.
 
 - https://www.npmjs.com/search?q=keywords:curl, https://www.npmjs.com/search?q=keywords:ssh
-- figure out travis
 - content will be enormous on curl debug output
 
 ### 1.0.4

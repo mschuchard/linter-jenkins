@@ -8,12 +8,14 @@ describe('The Jenkins provider for Linter', () => {
   beforeEach(() => {
     atom.workspace.destroyActivePaneItem();
     waitsForPromise(() => {
-      atom.packages.activatePackage('linter-jenkins');
+      atom.packages.activatePackage('linter-jenkins');/*
       atom.config.set('linter-jenkins.ssh.port', '2222');
       atom.config.set('linter-jenkins.ssh.key', '/home/matt/git_repos/vagrant-boxes-docker-images/jenkins-vagrant/.vagrant/machines/default/virtualbox/private_key');
       atom.config.set('linter-jenkins.ssh.userHost', 'vagrant@127.0.0.1');
       atom.config.set('linter-jenkins.ssh.httpURI', 'http://192.168.33.10:8080');
-      atom.config.set('linter-jenkins.lintMethod', 'SSH then full CLI');
+      atom.config.set('linter-jenkins.lintMethod', 'SSH then full CLI');*/
+      atom.config.set('linter-jenkins.curl.httpURI', 'https://ci.jenkins.io')
+      atom.config.set('linter-jenkins.lintMethod', 'CURL');
       return atom.packages.activatePackage('language-groovy').then(() =>
         atom.workspace.open(path.join(__dirname, 'fixtures/clean', 'Jenkinsfile'))
       );
