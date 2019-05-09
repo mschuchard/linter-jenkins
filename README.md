@@ -19,4 +19,4 @@ A Jenkins server with the `jenkins-pipeline` plugin installed is required to be 
 When you select `Debug Mode` from the package settings, the raw command used for linting will be output as info to the linter display in Atom. This is helpful for debugging whether your connection to the Jenkins Pipeline plugin is functioning. Note that `CLI` and `SSH` methods pipe in the `Jenkinsfile` content to `stdin`, which is represented as `< /path/to/Jenkinsfile` in the debug display. This might not necessarily be accurate for your OS.
 
 ### Note
-The CLI and CURL method is experimental, as it is the only method I have not received verification is working nor have been able to test. Users are encouraged to file an issue with information if they believe there is an issue with the code implementing that linting usage method.
+In a recent version of some dependent Atom package, a bug was introduced such that if there is a `;` in the comments of a `Jenkinsfile`, then the linter information will not display. Please refrain from `;` in comments until the dependent package fixes its bug.

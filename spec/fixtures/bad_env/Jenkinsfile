@@ -1,5 +1,5 @@
 // bad environment
-// environment section syntax error; also triggers multiple issues so helpful for future feature
+// environment section syntax error, and also triggers multiple issues so helpful for future feature
 pipeline {
   agent any
   environment {
