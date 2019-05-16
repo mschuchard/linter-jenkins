@@ -1,7 +1,9 @@
 ### Next
 - Add option to disable strict host key checking on SSH methods.
+- Add `user:password|token` authentication option for CURL method.
 
 - https://www.npmjs.com/search?q=keywords:curl, https://www.npmjs.com/search?q=keywords:ssh
+- content will be enormous on curl debug output; can also make more shell friendly
 
 ### 1.0.4
 - Updated `atom-linter` dependency.
