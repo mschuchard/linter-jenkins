@@ -4,6 +4,7 @@
 
 - https://www.npmjs.com/search?q=keywords:curl, https://www.npmjs.com/search?q=keywords:ssh
 - content will be enormous on curl debug output; can also make more shell friendly
+- option to disable ssl auth during curl method
 
 ### 1.0.4
 - Updated `atom-linter` dependency.
