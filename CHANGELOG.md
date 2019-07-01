@@ -1,3 +1,6 @@
+### 1.0.6
+- Fix curl insecure argument
+
 ### 1.0.5
 - Add option to disable strict host key checking on SSH methods.
 - Add `user:password|token` authentication option for CURL method.
