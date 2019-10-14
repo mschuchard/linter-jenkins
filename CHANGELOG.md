@@ -1,8 +1,5 @@
-### Next (Roadmap)
+### 1.0.6
 - Fix `curl` verify SSL.
-
-- https://www.npmjs.com/search?q=keywords:curl, https://www.npmjs.com/search?q=keywords:ssh
-- content will be enormous on curl debug output; can also make more shell friendly
 
 ### 1.0.5
 - Add option to disable strict host key checking on SSH methods.
