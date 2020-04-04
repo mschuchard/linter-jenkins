@@ -1,7 +1,10 @@
 # setup environment
-dist: xenial
-sudo: true
+dist: bionic
 language: java
+
+branches:
+  only:
+  - master
 
 notifications:
   email: false

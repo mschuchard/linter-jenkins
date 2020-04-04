@@ -1,3 +1,6 @@
+### Next (Roadmap)
+- https://www.npmjs.com/package/request, https://www.npmjs.com/package/ssh2
+
 ### 1.0.6
 - Fix `curl` verify SSL.
 
