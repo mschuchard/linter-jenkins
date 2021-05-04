@@ -1,5 +1,5 @@
 # setup environment
-dist: bionic
+dist: focal
 language: java
 
 branches:
@@ -15,16 +15,11 @@ git:
 # setup tests
 env:
   global:
-    - APM_TEST_PACKAGES="language-groovy"
-    - ATOM_LINT_WITH_BUNDLED_NODE="true"
+  - APM_TEST_PACKAGES='language-groovy'
+  - ATOM_LINT_WITH_BUNDLED_NODE='true'
 
-matrix:
-  include:
-  - os: linux
-    jdk: openjdk11
-  - os: linux
-    jdk: openjdk11
-    env: ATOM_CHANNEL=beta
+os: linux
+jdk: openjdk11
 
 # execute tests; utilizes public jenkinsci server
 script: 'curl -s https://raw.githubusercontent.com/atom/ci/master/build-package.sh | sh'

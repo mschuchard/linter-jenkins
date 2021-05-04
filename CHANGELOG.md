@@ -1,3 +1,7 @@
+### Next (Roadmap)
+- https://www.npmjs.com/package/request, https://www.npmjs.com/package/ssh2
+- circumvent ; and : bug?
+
 ### 1.0.7
 - Fix auth token concatenation to CURL request.
 - Add websocket option for CLI+HTTP method.
