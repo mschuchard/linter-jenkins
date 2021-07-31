@@ -1,7 +1,7 @@
 ![Preview](https://raw.githubusercontent.com/mschuchard/linter-jenkins/master/linter_jenkins.png)
 
 ### Linter-Jenkins
-[![Build Status](https://travis-ci.org/mschuchard/linter-jenkins.svg?branch=master)](https://travis-ci.org/mschuchard/linter-jenkins)
+[![Build Status](https://travis-ci.com/mschuchard/linter-jenkins.svg?branch=master)](https://travis-ci.com/mschuchard/linter-jenkins)
 
 Linter-Jenkins aims to provide functional and robust `declarative-linter` linting functionality within Atom. This will lint your Jenkinsfiles using declarative syntax.
 
@@ -19,4 +19,4 @@ A Jenkins server with the `jenkins-pipeline` plugin installed is required to be 
 When you select `Debug Mode` from the package settings, the raw command used for linting will be output as info to the linter display in Atom. This is helpful for debugging whether your connection to the Jenkins Pipeline plugin is functioning. Note that CLI and SSH methods pipe in the `Jenkinsfile` content to `stdin`, which is represented as `< /path/to/Jenkinsfile` in the debug display. This might not necessarily be accurate for your OS.
 
 ### Note
-Due to some incompatibility between the Jenkins Pipeline Validator and Atom and/or its packages, a bug was introduced such that if there is a `;` in the comments of a `Jenkinsfile`, then the linter information will not display. Also, usage of a `;` in the code (even within a String) will cause false errors. Please refrain from `;` in your `Jenkinsfile` until Atom and/or Jenkins fixes the bug.
+Due to some incompatibility between the Jenkins Pipeline Validator and Atom and/or its packages, a bug was introduced such that if there is a `;` or `:` in the comments of a `Jenkinsfile`, then the linter information will not display. Also, usage of a `;` in the code (even within a String) or `:` within comments will cause false errors. Please refrain from this usage in your `Jenkinsfile` until Atom and/or Jenkins fixes the bug.

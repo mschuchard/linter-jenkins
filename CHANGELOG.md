@@ -1,4 +1,6 @@
 ### Next (Roadmap)
+- Updates to Linter API usage.
+
 - https://www.npmjs.com/package/request, https://www.npmjs.com/package/ssh2
 - circumvent ; and : bug?
 
