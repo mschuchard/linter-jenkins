@@ -1,7 +1,7 @@
 ### Next (Roadmap)
 - Updates to Linter API usage.
 
-- https://www.npmjs.com/package/request, https://www.npmjs.com/package/ssh2
+- https://github.com/request/request/issues/3143, https://www.npmjs.com/package/ssh2
 - circumvent ; and : bug?
 
 ### 1.0.7
