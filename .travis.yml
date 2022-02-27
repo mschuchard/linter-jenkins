@@ -22,4 +22,4 @@ os: linux
 jdk: openjdk11
 
 # execute tests; utilizes public jenkinsci server
-script: 'curl -s https://raw.githubusercontent.com/atom/ci/master/build-package.sh | sh'
+script: 'curl -s https://raw.githubusercontent.com/mschuchard/vagrant-boxes-docker-images/master/atom-build-package.sh | sh'
