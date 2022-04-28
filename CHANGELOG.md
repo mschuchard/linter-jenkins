@@ -1,5 +1,6 @@
 ### Next (Roadmap)
 - Updates to Linter API usage.
+- Only require `Jenkinsfile` in filename if language is Groovy.
 
 - https://github.com/request/request/issues/3143, https://www.npmjs.com/package/ssh2
 - circumvent ; and : bug?
