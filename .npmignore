@@ -4,3 +4,5 @@ spec
 linter_jenkins.png
 .git
 .travis.yml
+.circleci
+.github
