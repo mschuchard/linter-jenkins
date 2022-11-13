@@ -1,8 +1,6 @@
-### Next (Roadmap)
+### 1.0.8
 - Updates to Linter API usage.
 - Only require `Jenkinsfile` in filename if language is Groovy.
-
-- circumvent ; and : bug?
 
 ### 1.0.7
 - Fix auth token concatenation to CURL request.
