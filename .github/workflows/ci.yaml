@@ -13,11 +13,11 @@ on:
 
 jobs:
   lint:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     container: node:14-alpine
     steps:
     - name: checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: install dependencies
       run: npm install
     - name: lint source and spec
