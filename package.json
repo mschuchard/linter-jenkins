@@ -44,7 +44,7 @@
         "error",
         {
           "ignore": [
-            "pulsar"
+            "atom"
           ]
         }
       ]
@@ -54,7 +54,7 @@
       "node": true
     },
     "globals": {
-      "pulsar": false
+      "atom": true
     }
   }
 }
